@@ -22,4 +22,4 @@ This uses the synchronous scan path. For fire-and-forget delivery, call the
 API with a `relay` config server-side and receive the envelope at your webhook.
 
 > Angular / framework-agnostic wrappers are planned. For now, non-React apps
-> can use [`@parserelay/client`](../client) directly.
+> can use [`@parserelay/client`](https://github.com/parserelay/client) directly.
