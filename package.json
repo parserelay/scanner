@@ -1,0 +1,41 @@
+{
+  "name": "@parserelay/scanner",
+  "version": "0.0.1",
+  "description": "Dead-simple drop-in scanner component for ParseRelay: capture or upload an image, get structured fields back.",
+  "license": "MIT",
+  "homepage": "https://parserelay.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parserelay/scanner.git"
+  },
+  "bugs": { "url": "https://github.com/parserelay/scanner/issues" },
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "publishConfig": { "access": "public" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "dependencies": {
+    "@parserelay/client": "workspace:*",
+    "@parserelay/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "react": "^18.2.0",
+    "typescript": "^5.4.0"
+  }
+}
